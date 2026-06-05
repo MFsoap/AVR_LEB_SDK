@@ -1,0 +1,20 @@
+{
+    "name": "com.avr.lebsdk.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8b65d8710c3b04373a41cbf6b777ee65"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Google.Protobuf.dll",
+        "Newtonsoft.Json.dll",
+        "System.Runtime.CompilerServices.Unsafe.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

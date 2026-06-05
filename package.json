@@ -1,0 +1,19 @@
+{
+  "name": "com.avr.lebsdk",
+  "version": "1.0.0",
+  "displayName": "AVR LEB SDK",
+  "description": "爱威尔大空间SDK",
+  "unity": "2022.3",
+  "unityRelease": "18f1c1",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "dependencies": {},
+  "keywords": [],
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "samples": []
+}
