@@ -21,6 +21,7 @@ namespace LEBSDK.WebSocket
 
 
         [SerializeField] private GameObject generatedObj;
+        [SerializeField] private Transform generatedObjParent;
 
         /// <summary>
         /// 固定长度 获取数据第四位开始
@@ -167,11 +168,14 @@ namespace LEBSDK.WebSocket
 
                     else
                     {
-                        var parent = transform.Find($"{playerData.AppId}");
+                        Transform p = null;
+                        p = generatedObjParent ?? transform;
+
+                        var parent = p.Find($"{playerData.AppId}");
                         if (parent == null)
                         {
                             parent = new GameObject().transform;
-                            parent.parent = transform;
+                            parent.parent = p;
                             parent.name = $"{playerData.AppId}";
                         }
 
