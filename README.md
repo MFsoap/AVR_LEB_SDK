@@ -50,5 +50,5 @@
     ~~~
 8. 到最后项目结束时执行,参数 1：是否退出，2：倒计时多少秒退出 | 可为空，默认是5秒
     ~~~
-        StartCoroutine(BroadcastProgress.Instance.Progress(true,5))
+       BroadcastProgress.Instance.Progress(true,5)
     ~~~
