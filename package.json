@@ -1,6 +1,6 @@
 {
   "name": "com.avr.lebsdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "AVR LEB SDK",
   "description": "爱威尔大空间SDK",
   "unity": "2022.3",
