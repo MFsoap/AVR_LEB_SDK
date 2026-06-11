@@ -52,6 +52,8 @@ namespace LEBSDK
 
             var time = intent.Call<string>("getStringExtra", "timestamp");
             Expansion1 ??= "wujie.iweier.com.cn/avr-wujie-api";
+            SceneName ??= "";
+            
             if (string.IsNullOrEmpty(time) || string.IsNullOrEmpty(OrderNumber))
             {
                 Utils.StartTimer(1, Application.Quit);

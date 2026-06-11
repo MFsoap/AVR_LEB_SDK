@@ -208,37 +208,6 @@ namespace LEBSDK.WebSocket
         {
             if (_isIn) return;
             _isIn = true;
-
-
-            // switch (GetMessage.SceneName)
-            // {
-            //     case "":
-            //     case "启程·时空列车":
-            //         SceneManager.LoadSceneAsync("One");
-            //         break;
-            //
-            //     case "渔火初燃":
-            //
-            //         SceneManager.LoadSceneAsync("Two");
-            //         break;
-            //
-            //     case "叩响时代之门":
-            //         SceneManager.LoadSceneAsync("Three");
-            //         break;
-            //
-            //     case "圣殿谜题":
-            //         SceneManager.LoadSceneAsync("Four");
-            //         break;
-            //
-            //     case "历史回响":
-            //         SceneManager.LoadSceneAsync("Five");
-            //         break;
-            //
-            //     case "冰城新生·归程":
-            //         SceneManager.LoadSceneAsync("Six");
-            //         break;
-            // }
-
             IsOpen = true;
             StartCoroutine(_heartBeatTween);
         }
