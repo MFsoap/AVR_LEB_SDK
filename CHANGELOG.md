@@ -10,3 +10,8 @@ All notable changes to this package will be documented in this file.
 
 ## 1.0.1 版本
 1. 添加父物体，使玩家放置在此下
+
+## 1.0.2 版本
+1. 更新上报结束方法，上报结束后程序退出
+2. 如果上报结束失败，则0.5秒后自动上传
+3. 更改上传剧情调用方法

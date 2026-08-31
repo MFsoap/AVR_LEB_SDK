@@ -47,9 +47,9 @@
 7. 每个场景根据设计添加一个中心轴并将场景设置成子物体可方便适配不同场地，将中心轴添加 SceneTransformManager 组件，并设置当前场景序列，从1开始。需等待0.5~1秒后执行剧情逻辑
 8. 每进入新的场景时执行
     ~~~
-          StartCoroutine(BroadcastProgress.Instance.SendHttp("（项目的场景名）"))
+       BroadcastProgress.Instance.ReportThePlot("（项目的场景名）"))
     ~~~
-9. 到最后项目结束时执行,参数 1：是否退出，2：倒计时多少秒退出 | 可为空，默认是5秒
+9. 到最后项目结束时执行,参数 倒计时多少秒退出 | 可为空，默认是5秒
     ~~~
-       BroadcastProgress.Instance.Progress(true,5)
+       BroadcastProgress.Instance.Progress(5)
     ~~~
