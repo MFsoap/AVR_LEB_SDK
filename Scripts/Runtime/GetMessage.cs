@@ -19,7 +19,7 @@ namespace LEBSDK
         public static string Expansion1 { get; private set; }
         public static string Expansion2 { get; private set; }
         public static string SceneName { get; private set; }
-        public static string Coordinate { get; private set; }
+
         public static long Timestamp { get; private set; }
 
         private static string _coordinate;
@@ -48,7 +48,7 @@ namespace LEBSDK
             Expansion1 = intent.Call<string>("getStringExtra", "expansion1");
             Expansion2 = intent.Call<string>("getStringExtra", "expansion2");
             SceneName = intent.Call<string>("getStringExtra", "sceneName");
-            _coordinate = intent.Call<string>("getStringExtra", "Coordinate");
+            _coordinate = intent.Call<string>("getStringExtra", "coordinate");
 
             var time = intent.Call<string>("getStringExtra", "timestamp");
             Expansion1 ??= "wujie.iweier.com.cn/avr-wujie-api";
